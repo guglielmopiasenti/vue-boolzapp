@@ -11,17 +11,28 @@
 /* General */
 
 body {
-  background-color: linear-gradient(var(--secondary-bg)), (var(--main-bg));
-  height: 100%;
+  background-image: linear-gradient(
+    var(--secondary-bg) 20%,
+    var(--main-bg) 20%
+  );
+}
+
+main {
+  height: 90vh;
+  flex-basis: 100%;
+}
+.avatar {
+  border-radius: 50%;
+  height: 30px;
 }
 
 /* TODO TEST REMOVE */
 
 .col-3 {
   border: var(--bbb);
-  height: 500px;
 }
 .col-9 {
   border: var(--bbb);
-  height: 500px;
 }
+
+/** Main CSS */

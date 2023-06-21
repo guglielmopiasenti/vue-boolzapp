@@ -20,16 +20,31 @@
   </head>
   <body>
     <!-- Vue js root -->
-    <div id="root">
+    <div
+      id="root"
+      class="vh-100 container d-flex align-items-center justify-content-center"
+    >
       <!-- app container -->
-      <div class="container">
-        <div class="row mt-5">
-          <!-- contacts section -->
-          <div id="contacts-section" class="col-3"></div>
-          <!-- messages section -->
-          <div id="messages-section" class="col-9"></div>
+
+      <main class="row">
+        <!-- contacts section -->
+        <div id="contacts-section" class="col-3">
+          <div id="user-bar">
+            <!-- img and user name -->
+            <div class="d-flex">
+              <img src="img/avatar_io.jpg" alt="user-picture" class="avatar" />
+              <div>Nome Utente</div>
+            </div>
+            <!-- options -->
+            <div></div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      </div>
+        <!-- messages section -->
+        <div id="messages-section" class="col-9"></div>
+      </main>
     </div>
   </body>
 </html>
