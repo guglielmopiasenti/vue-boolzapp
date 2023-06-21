@@ -23,7 +23,7 @@ main {
 }
 .avatar {
   border-radius: 50%;
-  height: 30px;
+  height: 40px;
 }
 
 /* TODO TEST REMOVE */
@@ -36,3 +36,31 @@ main {
 }
 
 /** Main CSS */
+#user-bar {
+  background-color: var(--up-bar);
+}
+/* left search bar */
+.my-input-group-text {
+  border-radius: 5px 0 0 5px;
+  background-color: white;
+  border: none;
+  padding: 0;
+}
+
+.my-search-bar {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  box-shadow: none;
+  background-color: white;
+}
+
+.my-input-group-text i {
+  padding: 0.5rem;
+  background-color: white;
+  color: #888;
+}
+
+/* contacts */
+#contacts {
+  background-color: white;
+}

@@ -11,6 +11,14 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- FontAwesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- CSS -->
@@ -28,19 +36,38 @@
 
       <main class="row">
         <!-- contacts section -->
-        <div id="contacts-section" class="col-3">
+        <div id="contacts-section" class="col-3 px-0">
           <div id="user-bar">
             <!-- img and user name -->
-            <div class="d-flex">
+            <div class="d-flex align-items-center p-1">
               <img src="img/avatar_io.jpg" alt="user-picture" class="avatar" />
-              <div>Nome Utente</div>
+              <div>User Name</div>
             </div>
             <!-- options -->
             <div></div>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <!-- Info bar -->
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-bell-slash fa-lg"></i>
+            <div>
+              <div>Get push notifications of new messages</div>
+              <a href="#">Activate desktop notifications</a>
+            </div>
+          </div>
+          <!-- searchbar chat -->
+          <form class="d-flex flex-grow-1" role="search">
+            <span class="input-group-text my-input-group-text" id="basic-addon1"
+              ><i class="fa-solid fa-magnifying-glass align-self-center"></i
+            ></span>
+            <input
+              class="form-control me-2 my-search-bar"
+              type="search"
+              placeholder="Search or start a new chat"
+              aria-label="Search"
+            />
+          </form>
+          <!-- Contacts -->
+          <div id="contacts"></div>
         </div>
         <!-- messages section -->
         <div id="messages-section" class="col-9"></div>
