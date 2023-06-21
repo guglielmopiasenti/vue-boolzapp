@@ -26,18 +26,12 @@ main {
   height: 40px;
 }
 
-/* TODO TEST REMOVE */
-
-.col-3 {
-  border: var(--bbb);
-}
-.col-9 {
-  border: var(--bbb);
-}
-
 /** Main CSS */
 #user-bar {
   background-color: var(--up-bar);
+}
+#searchbar-container {
+  background-color: var(--msg-bar);
 }
 /* left search bar */
 .my-input-group-text {
