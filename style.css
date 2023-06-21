@@ -1,0 +1,8 @@
+/*! Root custom properties */
+:root {
+  --main-bg: #dbdbd3;
+  --secondary-bg: #029788;
+  --msg-bar: #f3eeea;
+  --up-bar: #eaeaea;
+  --blue-bar: #8edafc;
+}
