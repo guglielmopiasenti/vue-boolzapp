@@ -16,7 +16,6 @@ body {
     var(--main-bg) 20%
   );
 }
-
 main {
   height: 90vh;
   flex-basis: 100%;
@@ -24,6 +23,9 @@ main {
 .avatar {
   border-radius: 50%;
   height: 40px;
+}
+a {
+  color: grey;
 }
 
 /** Main CSS */
@@ -76,6 +78,13 @@ main {
 /* message bar */
 #upper-msg-bar {
   background-color: var(--up-bar);
+}
+.txt-sm {
+  font-size: smaller;
+}
+.small-text {
+  color: gray;
+  font-size: smaller;
 }
 #chat-container {
   flex-grow: 1;

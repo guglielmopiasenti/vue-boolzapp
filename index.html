@@ -39,7 +39,7 @@
         <div id="contacts-section" class="col-3 px-0 d-flex flex-column">
           <div
             id="user-bar"
-            class="d-flex align-items-center justify-content-between p-1 px-2"
+            class="d-flex align-items-center justify-content-between p-2 px-2"
           >
             <!-- img and user name -->
             <div class="d-flex align-items-center gap-3">
@@ -56,14 +56,14 @@
             </div>
           </div>
           <!-- Info bar -->
-          <div id="info-bar" class="d-flex align-items-center p-2">
+          <div id="info-bar" class="d-flex align-items-center p-2 py-3">
             <span class="fa-stack fa-lg">
               <i class="fa-solid fa-circle fa-stack-2x"></i>
               <i class="fa-solid fa-bell-slash fa-stack-1x fa-inverse"></i>
             </span>
-            <div>
-              <div>Get push notifications of new messages</div>
-              <a href="#">Activate desktop notifications</a>
+            <div class="lh-sm">
+              <div class="txt-sm">Get push notifications of new messages</div>
+              <a href="#" class="small-text">Activate desktop notifications</a>
             </div>
           </div>
           <!-- searchbar contacts -->
@@ -89,16 +89,16 @@
         <div id="messages-section" class="col-9 px-0 d-flex flex-column">
           <div
             id="upper-msg-bar"
-            class="d-flex justify-content-between align-items-center p-1"
+            class="d-flex justify-content-between align-items-center p-2 px-3"
           >
-            <div class="d-flex justify-content-between gap-2">
+            <div class="d-flex justify-content-between gap-3">
               <img src="img/avatar_1.jpg" alt="" class="avatar" />
-              <div>
+              <div class="lh-sm">
                 <div>Name</div>
-                <div>Last access at:</div>
+                <div class="small-text">Last access at:</div>
               </div>
             </div>
-            <div class="d-flex gap-2">
+            <div class="d-flex gap-3">
               <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
               <a href="#"><i class="fa-solid fa-paperclip fa-lg"></i></a>
               <a href="#"
@@ -107,7 +107,10 @@
             </div>
           </div>
           <div id="chat-container"></div>
-          <div id="lower-msg-bar" class="d-flex align-items-center p-1 gap-2">
+          <div
+            id="lower-msg-bar"
+            class="d-flex align-items-center px-3 py-2 gap-3"
+          >
             <i class="fa-regular fa-face-smile fa-lg"></i>
             <input
               class="form-control"
