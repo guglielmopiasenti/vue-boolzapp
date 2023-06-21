@@ -59,8 +59,29 @@ main {
   background-color: white;
   color: #888;
 }
+/* info bar */
+#info-bar {
+  background-color: var(--blue-bar);
+}
 
 /* contacts */
 #contacts {
   background-color: white;
+  flex-grow: 1;
+  overflow-y: hidden;
+}
+
+/* Messages section */
+
+/* message bar */
+#upper-msg-bar {
+  background-color: var(--up-bar);
+}
+#chat-container {
+  flex-grow: 1;
+  overflow-y: hidden;
+  background-image: url(img/mine.jpg);
+}
+#lower-msg-bar {
+  background-color: var(--msg-bar);
 }
