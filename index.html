@@ -83,7 +83,20 @@
             </form>
           </div>
           <!-- Contacts -->
-          <div id="contacts"></div>
+          <div id="contacts">
+            <div
+              v-for="contact in contacts"
+              :key="contact.id"
+              class="contact-item d-flex p-2 px-3 align-items-center gap-3"
+            >
+              <img
+                :src="'img/avatar' + contact.avatar + '.jpg'"
+                :alt="contact.name"
+                class="avatar"
+              />
+              <div>{{ contact.name }}</div>
+            </div>
+          </div>
         </div>
         <!-- messages section -->
         <div id="messages-section" class="col-9 px-0 d-flex flex-column">
