@@ -36,7 +36,7 @@
 
       <main class="row">
         <!-- contacts section -->
-        <div id="contacts-section" class="col-3 px-0">
+        <div id="contacts-section" class="col-3 px-0 d-flex flex-column">
           <div
             id="user-bar"
             class="d-flex align-items-center justify-content-between p-1 px-2 gap-2"
@@ -64,21 +64,19 @@
             </div>
           </div>
           <!-- searchbar chat -->
-          <form class="d-flex flex-grow-1" role="search">
+          <form class="d-flex m-2" role="search">
             <span class="input-group-text my-input-group-text" id="basic-addon1"
               ><i class="fa-solid fa-magnifying-glass align-self-center"></i
             ></span>
             <input
-              class="form-control me-2 my-search-bar"
+              class="form-control my-search-bar"
               type="search"
               placeholder="Search or start a new chat"
               aria-label="Search"
             />
           </form>
           <!-- Contacts -->
-          <div id="contacts-container" class="d-flex">
-            <div id="contacts"></div>
-          </div>
+          <div id="contacts"></div>
         </div>
         <!-- messages section -->
         <div id="messages-section" class="col-9 px-0 d-flex flex-column">
