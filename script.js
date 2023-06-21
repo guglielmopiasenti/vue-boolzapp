@@ -200,6 +200,7 @@ createApp({
           ],
         },
       ],
+      selectedContact: null,
     };
   },
 }).mount("#root");
