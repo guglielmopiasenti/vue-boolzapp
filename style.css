@@ -5,4 +5,23 @@
   --msg-bar: #f3eeea;
   --up-bar: #eaeaea;
   --blue-bar: #8edafc;
+  --bbb: 1px dashed red;
+}
+
+/* General */
+
+body {
+  background-color: linear-gradient(var(--secondary-bg)), (var(--main-bg));
+  height: 100%;
+}
+
+/* TODO TEST REMOVE */
+
+.col-3 {
+  border: var(--bbb);
+  height: 500px;
+}
+.col-9 {
+  border: var(--bbb);
+  height: 500px;
 }
