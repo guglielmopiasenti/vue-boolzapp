@@ -6,6 +6,7 @@
   --up-bar: #eaeaea;
   --blue-bar: #8edafc;
   --bbb: 1px dashed red;
+  --msg-sent: #d5f9ba;
 }
 
 /* General */
@@ -79,6 +80,27 @@ a {
 #upper-msg-bar {
   background-color: var(--up-bar);
 }
+/* messages style */
+.message-item {
+  display: flex;
+}
+.message-item.sent {
+  justify-content: flex-end;
+}
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.message.received {
+  background-color: white;
+}
+
+.message.sent {
+  background-color: var(--msg-sent);
+}
 .txt-sm {
   font-size: smaller;
 }
@@ -94,3 +116,12 @@ a {
 #lower-msg-bar {
   background-color: var(--msg-bar);
 }
+
+/* <div
+                v-for="message in selectedContact.messages"
+                :key="message.id"
+                :class="['message', message.status]"
+              >
+                <div class="message-content">{{ message.message }}</div>
+                <div class="message-date small-text">{{ message.date }}</div>
+              </div> */
