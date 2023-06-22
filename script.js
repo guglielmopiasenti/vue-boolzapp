@@ -220,6 +220,17 @@ createApp({
       this.selectedContact.messages.push(newMessage);
       // clearing input bar
       this.newMessage = "";
+
+      // adding set timeout function with responseMessage
+      setTimeout(() => {
+        const responseMessage = {
+          id: this.selectedContact.messages.length + 1,
+          date: new Date().toLocaleString(),
+          message: "ok",
+          status: "received",
+        };
+        this.selectedContact.messages.push(responseMessage);
+      }, 1000);
     },
   },
 }).mount("#root");
