@@ -109,8 +109,9 @@ a {
   font-size: smaller;
 }
 #chat-container {
+  height: 50vh;
   flex-grow: 1;
-  overflow-y: hidden;
+  overflow-y: auto;
   background-image: url(img/mine.jpg);
 }
 #lower-msg-bar {
