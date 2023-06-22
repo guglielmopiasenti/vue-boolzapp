@@ -203,6 +203,13 @@ createApp({
       selectedContact: null,
     };
   },
+  computed: {
+    filteredContacts() {
+      return this.contacts.filter((contact) => {
+        return contact.name.includes(contacts);
+      });
+    },
+  },
   methods: {
     addMessage() {
       // Return if the input is empty
