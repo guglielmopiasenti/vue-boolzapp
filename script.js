@@ -209,13 +209,16 @@ createApp({
       if (!this.newMessage) {
         return;
       }
+      // creating new message
       const newMessage = {
         id: this.selectedContact.messages.length + 1,
         date: new Date().toLocaleString(),
         message: this.newMessage,
         status: "sent",
       };
+      // pushing new message
       this.selectedContact.messages.push(newMessage);
+      // clearing input bar
       this.newMessage = "";
     },
   },
