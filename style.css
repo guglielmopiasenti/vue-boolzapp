@@ -116,12 +116,3 @@ a {
 #lower-msg-bar {
   background-color: var(--msg-bar);
 }
-
-/* <div
-                v-for="message in selectedContact.messages"
-                :key="message.id"
-                :class="['message', message.status]"
-              >
-                <div class="message-content">{{ message.message }}</div>
-                <div class="message-date small-text">{{ message.date }}</div>
-              </div> */
