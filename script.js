@@ -203,4 +203,12 @@ createApp({
       selectedContact: null,
     };
   },
+  methods: {
+    // Return if the input is empty
+    addMessage() {
+      if (!this.newMessage) {
+        return;
+      }
+    },
+  },
 }).mount("#root");
