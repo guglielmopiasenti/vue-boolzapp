@@ -129,8 +129,13 @@
               <div
                 v-for="message in selectedContact.messages"
                 :key="message.id"
+                class="message-item d-flex"
               >
-                {{ message.message }}
+                <div
+                  :class="{'received-message': message.status === 'received', 'sent-message': message.status === 'sent'}"
+                >
+                  {{ message.message }}
+                </div>
               </div>
             </div>
           </div>
