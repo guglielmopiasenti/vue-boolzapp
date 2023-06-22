@@ -148,7 +148,8 @@
               class="form-control"
               type="text"
               placeholder="Write a message"
-              @keydown.enter="addMessage"
+              v-model="newMessage"
+              @keyup.enter="addMessage"
             />
             <i class="fa-solid fa-microphone fa-lg"></i>
           </div>

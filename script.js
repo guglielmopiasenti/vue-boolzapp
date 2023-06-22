@@ -204,8 +204,8 @@ createApp({
     };
   },
   methods: {
-    // Return if the input is empty
     addMessage() {
+      // Return if the input is empty
       if (!this.newMessage) {
         return;
       }
@@ -216,6 +216,7 @@ createApp({
         status: "sent",
       };
       this.selectedContact.messages.push(newMessage);
+      this.newMessage = "";
     },
   },
 }).mount("#root");
