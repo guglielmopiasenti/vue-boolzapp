@@ -209,6 +209,13 @@ createApp({
       if (!this.newMessage) {
         return;
       }
+      const newMessage = {
+        id: this.selectedContact.messages.length + 1,
+        date: new Date().toLocaleString(),
+        message: this.newMessage,
+        status: "sent",
+      };
+      this.selectedContact.messages.push(newMessage);
     },
   },
 }).mount("#root");
