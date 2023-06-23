@@ -116,7 +116,8 @@ a {
   color: gray;
   font-size: smaller;
 }
-
+.contact-item > .contact-message {
+}
 /* message menu */
 
 /* lower bar */

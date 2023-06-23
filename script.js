@@ -243,5 +243,24 @@ createApp({
         this.selectedContact.messages.push(responseMessage);
       }, 1000);
     },
+    // Get the last sent/received message for a contact
+    getLastMessage(contact) {
+      if (contact.messages.length > 0) {
+        const lastMessage =
+          contact.messages[contact.messages.length - 1].message;
+        const words = lastMessage.split(" ");
+        if (words.length > 3) {
+          return words.slice(0, 3).join(" ") + "...";
+        }
+        return lastMessage;
+      }
+      return "";
+    },
+    // Get the time of the last sent/received message for a contact
+    getLastMessageTime(contact) {
+      const messages = contact.messages;
+      const lastMessage = messages[messages.length - 1];
+      return lastMessage ? lastMessage.date : "";
+    },
   },
 }).mount("#root");
