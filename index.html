@@ -133,18 +133,9 @@
                 class="message-item"
                 :class="message.status"
               >
-                <div
-                  :class="['message', message.status]"
-                  @click="showDeleteDropdown(message)"
-                >
+                <div :class="['message', message.status]">
                   <div class="message-content">{{ message.message }}</div>
                   <div class="message-date small-text">{{ message.date }}</div>
-                  <div
-                    class="message-delete-dropdown"
-                    v-if="message.showDropdown"
-                  >
-                    <a href="#" @click="deleteMessage(message)">Delete</a>
-                  </div>
                 </div>
               </div>
             </div>
