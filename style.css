@@ -81,6 +81,15 @@ a {
 #upper-msg-bar {
   background-color: var(--up-bar);
 }
+
+/* message container */
+#chat-container {
+  height: 50vh;
+  flex-grow: 1;
+  overflow-y: auto;
+  background-image: url(img/mine.jpg);
+}
+
 /* messages style */
 .message-item {
   display: flex;
@@ -94,11 +103,9 @@ a {
   font-size: 14px;
   margin: 10px;
 }
-
 .message.received {
   background-color: white;
 }
-
 .message.sent {
   background-color: var(--msg-sent);
 }
@@ -109,12 +116,10 @@ a {
   color: gray;
   font-size: smaller;
 }
-#chat-container {
-  height: 50vh;
-  flex-grow: 1;
-  overflow-y: auto;
-  background-image: url(img/mine.jpg);
-}
+
+/* message menu */
+
+/* lower bar */
 #lower-msg-bar {
   background-color: var(--msg-bar);
 }
