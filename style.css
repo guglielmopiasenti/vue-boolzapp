@@ -71,6 +71,7 @@ a {
 #contacts {
   background-color: white;
   flex-grow: 1;
+  height: 50vh;
   overflow-y: auto;
 }
 
