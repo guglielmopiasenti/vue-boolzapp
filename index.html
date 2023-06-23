@@ -79,13 +79,14 @@
                 type="search"
                 placeholder="Search or start a new chat"
                 aria-label="Search"
+                v-model="searchResult"
               />
             </form>
           </div>
           <!-- Contacts -->
           <div id="contacts">
             <div
-              v-for="contact in contacts"
+              v-for="contact in filteredContacts"
               :key="contact.id"
               class="contact-item d-flex p-2 px-3 align-items-center gap-3"
               @click="selectedContact = contact"

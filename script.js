@@ -4,6 +4,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      searchResult: "",
       user: {
         name: "Nome Utente",
         avatar: "_io",
@@ -205,8 +206,9 @@ createApp({
   },
   computed: {
     filteredContacts() {
+      // filter the new results based on searchResult
       return this.contacts.filter((contact) => {
-        return contact.name.includes(contacts);
+        return contact.name.includes(this.searchResult);
       });
     },
   },
