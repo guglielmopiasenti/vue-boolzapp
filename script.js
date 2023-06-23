@@ -202,9 +202,6 @@ createApp({
         },
       ],
       selectedContact: null,
-      // Add showDropdown property for each message
-      newMessage: "",
-      deleteDropdownVisible: false,
     };
   },
   computed: {
@@ -246,6 +243,5 @@ createApp({
         this.selectedContact.messages.push(responseMessage);
       }, 1000);
     },
-    // adding delete message method
   },
 }).mount("#root");
