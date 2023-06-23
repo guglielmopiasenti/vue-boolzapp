@@ -208,7 +208,9 @@ createApp({
     filteredContacts() {
       // filter the new results based on searchResult
       return this.contacts.filter((contact) => {
-        return contact.name.includes(this.searchResult);
+        return contact.name
+          .toLowerCase()
+          .includes(this.searchResult.toLowerCase());
       });
     },
   },
